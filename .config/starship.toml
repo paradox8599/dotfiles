@@ -5,19 +5,25 @@ $username\
 [](fg:#8AADF4 bg:#F5BDE6)\
 $directory\
 [](fg:#F5BDE6 bg:#B7BDF8)\
+$lua\
+$aws\
+$rust\
+$nodejs\
+$bun\
+$python\
+$zig\
+$swift\
+$dart\
+$php\
+$ruby\
+$perl\
+$nix_shell\
 $c\
-$elixir\
-$elm\
 $golang\
 $gradle\
 $haskell\
 $java\
-$julia\
-$nodejs\
-$bun\
 $nim\
-$rust\
-$scala\
 [](fg:#B7BDF8 bg:#0db7ed)\
 $docker_context\
 [](fg:#0db7ed bg:#B7BDF8)\
@@ -54,62 +60,62 @@ truncation_symbol = "~/..../"
 "Pictures" = " "
 
 [aws]
-symbol = "  "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [buf]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [c]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [conda]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [crystal]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [dart]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
-symbol = " "
+symbol = ""
 style = "bg:#0db7ed fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [elixir]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [elm]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [fennel]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [fossil_branch]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol $branch ]($style)'
 
@@ -118,77 +124,77 @@ style = "bg:#B7BDF8 fg:#212121"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [guix_shell]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [haskell]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [haxe]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [hg_branch]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [hostname]
-ssh_symbol = " "
+ssh_symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [kotlin]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [lua]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [memory_usage]
-symbol = "󰍛 "
+symbol = "󰍛"
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [meson]
-symbol = "󰔷 "
+symbol = "󰔷"
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
-symbol = "󰆥 "
+symbol = "󰆥"
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [nix_shell]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [bun]
-symbol = "🍔"
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
@@ -198,62 +204,62 @@ style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [ocaml]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [package]
-symbol = "󰏗 "
+symbol = "󰏗"
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [perl]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [php]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [pijul_channel]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [python]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [rlang]
-symbol = "󰟔 "
+symbol = "󰟔"
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [ruby]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
-symbol = "󱘗 "
+symbol = "󱘗"
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [scala]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [swift]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
 [zig]
-symbol = " "
+symbol = ""
 style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol ($version) ]($style)'
 
@@ -304,6 +310,6 @@ Windows = "󰍲 "
 # ♥
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
+time_format = "%R"              # Hour:Minute Format
 style = "bg:#8AADF4 fg:#212121"
 format = '[ $time ]($style)'
