@@ -20,13 +20,16 @@ $rust\
 $scala\
 [](fg:#B7BDF8 bg:#0db7ed)\
 $docker_context\
-[](fg:#0db7ed bg:#f14e32)\
+[](fg:#0db7ed bg:#B7BDF8)\
 $git_branch\
 $git_status\
-[](fg:#f14e32 bg:#33658A)\
+[](fg:#B7BDF8 bg:#8AADF4)\
 $time\
-[ ](fg:#33658A)\
+[ ](fg:#8AADF4)\
 """
+
+# #f14e32
+# #33658A
 
 [username]
 show_always = true
@@ -107,11 +110,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = " "
-style = "bg:#f14e32 fg:#212121"
+style = "bg:#B7BDF8 fg:#212121"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#f14e32 fg:#212121"
+style = "bg:#B7BDF8 fg:#212121"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
@@ -302,5 +305,5 @@ Windows = "󰍲 "
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
+style = "bg:#8AADF4 fg:#212121"
 format = '[ $time ]($style)'
