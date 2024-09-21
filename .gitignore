@@ -1,0 +1,9 @@
+*
+!.config/
+!.config/starship.toml
+
+!.glzr
+!.glzr/glazewm
+!.glzr/zebar
+!.glzr/glazewm/config.yaml
+!.glzr/zebar/*
