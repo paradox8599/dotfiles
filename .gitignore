@@ -1,0 +1,17 @@
+*
+
+!.gitignore
+
+!.config/
+!.config/starship.toml
+
+!.glzr/
+!.glzr/glazewm
+!.glzr/glazewm/config.yaml
+
+!.glzr/zebar
+!.glzr/zebar/*
+
+!.ssh/
+!.ssh/config
+
