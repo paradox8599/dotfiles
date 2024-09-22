@@ -1,12 +1,1 @@
 *
-!.config/
-!.config/starship.toml
-
-!.config/tmux
-!.config/tmux/tmux.conf
-
-!.glzr
-!.glzr/glazewm
-!.glzr/zebar
-!.glzr/glazewm/config.yaml
-!.glzr/zebar/*
