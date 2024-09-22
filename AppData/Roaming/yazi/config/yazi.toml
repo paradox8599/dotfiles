@@ -10,7 +10,7 @@ scrolloff = 10
 wrap = "yes"
 
 [opener]
-edit = [{ run = 'nvim "%*"', block = true, desc = "Neovim", for = "windows" }]
+edit = [{ run = 'nvim %*', block = true, desc = "nvim", for = "windows" }]
 
 [open]
 
