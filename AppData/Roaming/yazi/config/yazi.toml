@@ -1,0 +1,29 @@
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
+[manager]
+show_hidden = true
+linemode = "size"
+title_format = "yazi: {cwd}"
+scrolloff = 10
+
+[preview]
+wrap = "yes"
+
+[opener]
+edit = [{ run = 'nvim "%*"', block = true, desc = "Neovim", for = "windows" }]
+
+[open]
+
+append_rules = [
+  { name = "*/", use = [
+    "edit",
+    "open",
+    "reveal",
+  ] },
+
+  { mime = "*", use = [
+    "edit",
+    "open",
+    "reveal",
+  ] },
+]
