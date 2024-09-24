@@ -21,6 +21,7 @@ end
 if is_darwin() then
 	config.color_scheme = "Adventure"
 	config.font_size = 13.0
+	config.native_macos_fullscreen_mode = true
 end
 
 if is_win() then
