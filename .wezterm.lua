@@ -26,7 +26,7 @@ if is_darwin() then
 	config.font_size = 13.0
 end
 
-if is_win then
+if is_win() then
 	config.font_size = 10.0
 	config.default_prog = { "pwsh", "--nologo" }
 end
