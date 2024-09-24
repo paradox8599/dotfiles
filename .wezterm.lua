@@ -27,13 +27,13 @@ if is_win() then
 	config.color_scheme = "Bamboo"
 	config.font_size = 10.0
 	config.default_prog = { "pwsh", "--nologo" }
+	config.window_decorations = "RESIZE"
 end
 
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
 
 config.macos_window_background_blur = 40
 config.window_background_opacity = 0.7
-config.window_decorations = "RESIZE"
 config.initial_cols = 120
 config.initial_rows = 32
 
