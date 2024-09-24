@@ -38,6 +38,14 @@ if is_win() then
 	config.window_decorations = "RESIZE"
 end
 
+config.mouse_bindings = {
+	{
+		event = { Up = { streak = 1, button = "Left" } },
+		mods = "NONE",
+		action = wezterm.action.CompleteSelection("ClipboardAndPrimarySelection"),
+	},
+}
+
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
 
 config.macos_window_background_blur = 40
