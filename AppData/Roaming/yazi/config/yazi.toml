@@ -14,16 +14,25 @@ edit = [{ run = 'nvim %*', block = true, desc = "nvim", for = "windows" }]
 
 [open]
 
-rules = [
+append_rules = [
   # Folder
   { name = "*/", use = [
     "edit",
     "open",
     "reveal",
   ] },
+  { name = "*.exe", use = [
+    "open",
+    "reveal",
+  ] },
   # Text
   { mime = "text/*", use = [
     "edit",
+    "reveal",
+  ] },
+  # PDF
+  { name = "*.pdf", use = [
+    "open",
     "reveal",
   ] },
   # Image
