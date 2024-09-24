@@ -31,8 +31,8 @@ end
 
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
 
-config.macos_window_background_blur = 20
-config.window_background_opacity = 0.3
+config.macos_window_background_blur = 40
+config.window_background_opacity = 0.7
 config.window_decorations = "RESIZE"
 config.initial_cols = 120
 config.initial_rows = 32
