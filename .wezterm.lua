@@ -19,8 +19,8 @@ end
 ----------------------------------------------------------------
 
 config.color_scheme = "Bamboo"
--- config.color_scheme = 'Bitmute (terminal.sexy)'
--- config.color_scheme = 'Breeze (Gogh)'
+-- config.color_scheme = "Bitmute (terminal.sexy)"
+-- config.color_scheme = "Breeze (Gogh)"
 
 if is_darwin() then
 	config.font_size = 13.0
@@ -33,7 +33,9 @@ end
 
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
 
-config.window_background_opacity = 0.95
+config.macos_window_background_blur = 20
+config.window_background_opacity = 0.3
+config.window_decorations = "RESIZE"
 config.initial_cols = 120
 config.initial_rows = 32
 
