@@ -44,17 +44,6 @@ if is_win() then
 	config.font_size = 10.0
 	config.default_prog = { "pwsh", "--nologo" }
 	config.window_decorations = "RESIZE"
-
-	config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
-	config.keys = {
-		{ key = "b", mods = "LEADER", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-		{ key = "v", mods = "LEADER", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
-		{ key = "h", mods = "LEADER|CTRL", action = action.ActivatePaneDirection("Left") },
-		{ key = "l", mods = "LEADER|CTRL", action = action.ActivatePaneDirection("Right") },
-		{ key = "j", mods = "LEADER|CTRL", action = action.ActivatePaneDirection("Down") },
-		{ key = "k", mods = "LEADER|CTRL", action = action.ActivatePaneDirection("Up") },
-		{ key = "x", mods = "LEADER|CTRL", action = action.CloseCurrentPane({ confirm = true }) },
-	}
 end
 
 config.mouse_bindings = {
