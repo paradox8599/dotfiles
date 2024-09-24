@@ -28,7 +28,7 @@ alias i=""
 
 alias http="python -m http.server"
 
-# init
+# # init
 eval $(thefuck --alias)
 eval "$(vfox activate zsh)"
 
@@ -36,9 +36,6 @@ eval "$(vfox activate zsh)"
 eval "$(zoxide init zsh)"
 alias j=z
 alias ji=zi
-
-# bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # Yazi
 export EDITOR=nvim
@@ -50,6 +47,12 @@ function y() {
   fi
   rm -f -- "$tmp"
 }
+
+# zimfw
+source "$HOME/.zim.zshrc"
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # starship
 eval "$(starship init zsh)"
