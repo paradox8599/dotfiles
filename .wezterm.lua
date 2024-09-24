@@ -1,14 +1,27 @@
 local wezterm = require("wezterm")
-
 local config = {}
-
 if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+local is_darwin = function()
+	return wezterm.target_triple:find("darwin") ~= nil
+end
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
 config.color_scheme = "Adventure"
 
-config.font_size = 13.0
+if is_darwin() then
+	config.font_size = 13.0
+else
+	config.font_size = 12.0
+end
+
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
 
 config.window_background_opacity = 0.98
