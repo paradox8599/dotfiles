@@ -10,7 +10,7 @@ window/bar:
   # Width of the window in physical pixels.
   width: '{{ self.args.MONITOR_WIDTH }}'
   # Height of the window in physical pixels.
-  height: '32'
+  height: '26'
   # X-position of the window in physical pixels.
   position_x: '{{ self.args.MONITOR_X }}'
   # Y-position of the window in physical pixels.
@@ -34,13 +34,13 @@ window/bar:
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    height: 28px;
+    height: 24px;
     color: rgb(255 255 255 / 95%);
     font-family: ui-monospace, monospace;
     font-size: 14px;
     padding: 2px 8px;
     # border-bottom: 1px solid rgb(255 255 255 / 5%);
-    margin: 2px 4px;
+    margin: 1px 2px;
     # background: linear-gradient(rgb(0 0 0 / 95%), rgb(5 2 20 / 90%));
     background: rgb(33 33 33 / 99%);
     border-radius: 100px;
@@ -69,7 +69,7 @@ window/bar:
         .workspace {
           background: rgb(255 255 255 / 5%);
           margin-right: 4px;
-          padding: 2px 8px;
+          padding: 1px 32px;
           color: rgb(255 255 255 / 90%);
           border: none;
           border-radius: 4px;
