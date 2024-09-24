@@ -8,7 +8,7 @@ end
 
 config.color_scheme = "Adventure"
 
-config.font_size = 12.0
+config.font_size = 13.0
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
 
 config.window_background_opacity = 0.98
