@@ -18,15 +18,13 @@ end
 ----------------------------------------------------------------
 ----------------------------------------------------------------
 
-config.color_scheme = "Bamboo"
--- config.color_scheme = "Bitmute (terminal.sexy)"
--- config.color_scheme = "Breeze (Gogh)"
-
 if is_darwin() then
+	config.color_scheme = "Adventure"
 	config.font_size = 13.0
 end
 
 if is_win() then
+	config.color_scheme = "Bamboo"
 	config.font_size = 10.0
 	config.default_prog = { "pwsh", "--nologo" }
 end
