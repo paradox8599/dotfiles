@@ -22,6 +22,11 @@ if is_darwin() then
 	config.color_scheme = "Adventure"
 	config.font_size = 13.0
 	config.native_macos_fullscreen_mode = true
+
+	wezterm.on("gui-startup", function(cmd)
+		local _, _, window = wezterm.mux.spawn_window(cmd or {})
+		window:gui_window():toggle_fullscreen()
+	end)
 end
 
 if is_win() then
