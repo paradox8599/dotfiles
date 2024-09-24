@@ -18,8 +18,11 @@ end
 ----------------------------------------------------------------
 ----------------------------------------------------------------
 
+config.color_scheme = "Arthur (Gogh)"
+-- config.color_scheme = 'Bespin (base16)'
+-- config.color_scheme = "Catppuccin Mocha"
+
 if is_darwin() then
-	config.color_scheme = "Adventure"
 	config.font_size = 13.0
 	config.native_macos_fullscreen_mode = true
 
@@ -30,7 +33,6 @@ if is_darwin() then
 end
 
 if is_win() then
-	config.color_scheme = "Bamboo"
 	config.font_size = 10.0
 	config.default_prog = { "pwsh", "--nologo" }
 	config.window_decorations = "RESIZE"
