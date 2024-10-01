@@ -208,6 +208,8 @@ keybindings:
   # Terminal and Git Bash respectively.
   - commands: ["shell-exec wezterm-gui"]
     bindings: ["alt+shift+enter"]
+  - commands: ["shell-exec wezterm-gui start -- sudo pwsh"]
+    bindings: ["ctrl+alt+shift+enter"]
 
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ["focus --next-workspace"]
