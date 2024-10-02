@@ -46,12 +46,4 @@ if is_win() then
 	config.window_decorations = "RESIZE"
 end
 
-config.mouse_bindings = {
-	{
-		event = { Up = { streak = 1, button = "Left" } },
-		mods = "NONE",
-		action = action.CompleteSelection("ClipboardAndPrimarySelection"),
-	},
-}
-
 return config
