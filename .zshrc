@@ -4,7 +4,7 @@ export DOCKER_DEFAULT_PLATFORM=linux/amd64
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.bun/bin"
 # psql
-# export PATH="$PATH:$HOMEBREW_PREFIX/opt/postgresql@15/bin"
+export PATH="$PATH:$HOMEBREW_PREFIX/opt/postgresql@16/bin"
 
 alias ta="tmux -u attach -t"
 alias tn="tmux -u new -s"
@@ -25,6 +25,9 @@ alias vic="nvim --clean"
 alias lg=lazygit
 alias ii="open"
 alias i=""
+alias l="ls"
+alias ll="ls -lsh"
+alias la="ls -lash"
 
 alias http="python -m http.server"
 
