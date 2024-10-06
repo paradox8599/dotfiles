@@ -23,6 +23,9 @@ Set-Alias dkc docker-compose
 function gdot {
     git --git-dir=$HOME/.paragit --work-tree=$HOME $args
 }
+function lgdot {
+    lazygit -w $HOME -g $HOME/.paragit $args
+}
 
 function ccc {
     bunx conventional-changelog-cli $args
