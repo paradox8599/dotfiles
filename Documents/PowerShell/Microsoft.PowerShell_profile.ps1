@@ -23,7 +23,7 @@ Set-Alias dkc docker-compose
 function gdot {
     git --git-dir=$HOME/.paragit --work-tree=$HOME $args
 }
-function lgdot {
+function lgd {
     lazygit -w $HOME -g $HOME/.paragit $args
 }
 
