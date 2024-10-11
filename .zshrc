@@ -23,6 +23,7 @@ alias vim=nvim
 alias vi=nvim
 alias vic="nvim --clean"
 alias lg=lazygit
+alias lgd="lazygit -w $HOME -g $HOME/.paragit"
 alias ii="open"
 alias i=""
 alias l="ls"
