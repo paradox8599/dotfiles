@@ -20,9 +20,14 @@ Set-Alias curl "C:\Users\para\scoop\shims\curl.exe"
 Set-Alias dkc docker-compose
 
 
+function vic {
+    nvim --clean $args
+}
+
 function gdot {
     git --git-dir=$HOME/.paragit --work-tree=$HOME $args
 }
+
 function lgd {
     lazygit -w $HOME -g $HOME/.paragit $args
 }
