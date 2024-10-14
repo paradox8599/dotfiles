@@ -43,6 +43,7 @@ end
 if is_win() then
 	config.font_size = 10.0
 	config.default_prog = { "pwsh", "--nologo" }
+	-- config.default_prog = { "nu" }
 	config.window_decorations = "RESIZE"
 end
 
