@@ -47,8 +47,8 @@ function mitm {
     sudo mitmproxy --mode=transparent --showhost --set console_mouse=false
 }
 
-function mitmflow {
-    mitmproxy --set console_mouse=false --showhost -r $args
+function mflow {
+    mitmproxy -n --set console_mouse=false --showhost -r $args
 }
 
 Set-Alias -Name j -Value __zoxide_z -Option AllScope -Scope Global -Force
@@ -69,8 +69,8 @@ function la { ls.exe -lash $args }
 
 function psp { netstat -ano | Select-String $args }
 
-function ce { ~/Documents/CtrlEscape.ahk }
-function ec { Stop-Process -Name "AutoHotkeyU64" }
+function ce { sudo ~/Documents/CtrlEscape.ahk }
+function ec { sudo Stop-Process -Name "AutoHotkeyU64" }
 
 function wrangler { bunx wrangler $args }
 
