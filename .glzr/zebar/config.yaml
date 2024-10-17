@@ -142,7 +142,7 @@ window/bar:
       styles: |
         .sp-l { padding: 0; padding-left: 4px; margin: 0; }
       template: |
-        @if (true) {}
+        @if (false) {}
         @else if (network.defaultInterface?.type === 'ethernet' || network.defaultInterface?.type === 'wifi') {
           @if (network.traffic.transmitted / 1000 / 1000 < 1) {
             <i class="nf nf-md-chevron_up sp-l"></i>
@@ -159,7 +159,7 @@ window/bar:
           {{ (network.traffic.received / 1000 / 1000).toFixed(1) }} MB/s
         }
 
-        <!-- Show icon based on signal strength. -->
+        <!-- Show icon based on signal strength.
         @if (network.defaultInterface?.type === 'ethernet') {
           <i class="nf nf-md-ethernet_cable"></i>
         } @else if (network.defaultInterface?.type === 'wifi') {
@@ -172,6 +172,7 @@ window/bar:
         } @else {
           <i class="nf nf-md-wifi_strength_off_outline"></i>
         }
+        -->
 
     template/memory:
       providers: ["memory"]
