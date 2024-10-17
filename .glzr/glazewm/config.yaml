@@ -2,8 +2,8 @@ general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
   startup_commands:
+    - "shell-exec pwsh %userprofile%/.glzr/glazewm/startup.ps1"
     - "shell-exec %userprofile%/.glzr/zebar/start.bat"
-    - "shell-exec %userprofile%/.glzr/glazewm/gwm.ps1" # https://github.com/ParasiteDelta/GAT-GWM
 
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
@@ -195,7 +195,8 @@ keybindings:
     bindings: ["alt+shift+back"]
 
   # Kill GlazeWM process safely.
-  - commands: ["wm-exit"]
+  - commands:
+      ["wm-exit", "shell-exec pwsh %userprofile%/.glzr/glazewm/shutdown.ps1"]
     bindings: ["alt+shift+f12"]
 
   # Re-evaluate configuration file.
