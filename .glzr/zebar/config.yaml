@@ -142,8 +142,7 @@ window/bar:
       styles: |
         .sp-l { padding: 0; padding-left: 4px; margin: 0; }
       template: |
-        @if (false) {}
-        @else if (network.defaultInterface?.type === 'ethernet' || network.defaultInterface?.type === 'wifi') {
+        @if (network.defaultInterface?.type === 'ethernet' || network.defaultInterface?.type === 'wifi') {
           @if (network.traffic.transmitted / 1000 / 1000 < 1) {
             <i class="nf nf-md-chevron_up sp-l"></i>
           } @else if (network.traffic.transmitted / 1000 / 1000 < 3) {
