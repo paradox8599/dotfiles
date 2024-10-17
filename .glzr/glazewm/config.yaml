@@ -84,6 +84,7 @@ workspaces:
 window_rules:
   - commands: ["ignore"]
     match:
+      - window_process: { equals: "WeChat" }
       # Ignores any Zebar windows.
       - window_process: { equals: "zebar" }
 
@@ -98,7 +99,6 @@ window_rules:
   - commands: ["set-floating"]
     match:
       - window_title: { equals: "Friends List" }
-      - window_process: { equals: "WeChat" }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
