@@ -55,12 +55,6 @@ window/bar:
       display: flex;
       align-items: center;
 
-    # template/logo:
-    #   styles: |
-    #     margin-right: 20px;
-    #   template: |
-    #     <i class="nf nf-fa-windows"></i>
-
     template/glazewm_workspaces:
       styles: |
         display: flex;
@@ -145,7 +139,25 @@ window/bar:
 
     template/network:
       providers: ["network"]
+      styles: |
+        .sp-l { padding: 0; padding-left: 4px; margin: 0; }
       template: |
+        @if (network.defaultInterface?.type === 'ethernet' || network.defaultInterface?.type === 'wifi') {
+          @if (network.traffic.transmitted / 1000 / 1000 < 1) {
+            <i class="nf nf-md-chevron_up sp-l"></i>
+          } @else if (network.traffic.transmitted / 1000 / 1000 < 3) {
+            <i class="nf nf-md-chevron_double_up sp-l"></i>
+          } @else { <i class="nf nf-md-chevron_triple_up sp-l"></i> }
+          {{ (network.traffic.transmitted / 1000 / 1000).toFixed(1) }} MB/s
+
+          @if (network.traffic.received / 1000 / 1000 < 1) {
+            <i class="nf nf-md-chevron_down sp-l"></i>
+          } @else if (network.traffic.received / 1000 / 1000 < 3) {
+            <i class="nf nf-md-chevron_double_down sp-l"></i>
+          } @else { <i class="nf nf-md-chevron_triple_down sp-l"></i> }
+          {{ (network.traffic.received / 1000 / 1000).toFixed(1) }} MB/s
+        }
+
         <!-- Show icon based on signal strength. -->
         @if (network.defaultInterface?.type === 'ethernet') {
           <i class="nf nf-md-ethernet_cable"></i>
