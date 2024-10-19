@@ -69,8 +69,8 @@ function la { ls.exe -lash $args }
 
 function psp { netstat -ano | Select-String $args }
 
-function ce { sudo ~/Documents/CtrlEscape.ahk }
-function ec { sudo Stop-Process -Name "AutoHotkeyU64" }
+function ce { sudo ~/Documents/CtrlEscape.exe }
+function ec { sudo Stop-Process -Name "CtrlEscape" }
 
 function wrangler { bunx wrangler $args }
 
