@@ -2,7 +2,7 @@
 
 [manager]
 show_hidden = true
-linemode = "size"
+linemode = "mtime"
 title_format = "yazi: {cwd}"
 scrolloff = 10
 

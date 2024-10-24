@@ -1,0 +1,6 @@
+[[manager.prepend_keymap]]
+on = "="
+run = "hardlink"
+desc = "Hardlink yanked files"
+
+
