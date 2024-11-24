@@ -23,8 +23,7 @@ config.initial_rows = 32
 config.macos_window_background_blur = 40
 config.window_background_opacity = 0.7
 
-config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
-
+config.font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Medium" })
 config.color_scheme = "Arthur (Gogh)"
 
 if is_darwin() then
