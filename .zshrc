@@ -24,6 +24,7 @@ alias vi=nvim
 alias vic="nvim --clean"
 alias lg=lazygit
 alias lgd="lazygit -w $HOME -g $HOME/.paragit"
+alias gitd='git --git-dir=$HOME/.paragit --work-tree=$HOME'
 alias ii="open"
 alias i=""
 alias l="ls"
