@@ -34,7 +34,7 @@ alias la="ls -lash"
 alias http="python -m http.server"
 
 # # init
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 eval "$(vfox activate zsh)"
 
 # zoxide
