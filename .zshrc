@@ -27,9 +27,9 @@ alias lgd="lazygit -w $HOME -g $HOME/.paragit"
 alias gitd='git --git-dir=$HOME/.paragit --work-tree=$HOME'
 alias ii="open"
 alias i=""
-alias l="ls"
-alias ll="ls -lsh"
-alias la="ls -lash"
+alias l="eza --long --icons --sort=type --group"
+alias ll="l --header"
+alias la="l --all"
 
 alias http="python -m http.server"
 
