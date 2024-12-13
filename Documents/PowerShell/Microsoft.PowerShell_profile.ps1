@@ -24,7 +24,7 @@ function vic {
     nvim --clean $args
 }
 
-function gdot {
+function gitd {
     git --git-dir=$HOME/.paragit --work-tree=$HOME $args
 }
 
