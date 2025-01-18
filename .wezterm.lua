@@ -25,6 +25,7 @@ config.window_background_opacity = 0.7
 
 config.font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Medium" })
 config.color_scheme = "Arthur (Gogh)"
+config.line_height = 1
 
 if is_darwin() then
 	config.font_size = 13.0
