@@ -39,9 +39,18 @@ end
 
 if is_win() then
 	config.font_size = 10.0
+	config.line_height = 1
 	config.default_prog = { "pwsh", "--nologo" }
-	-- config.default_prog = { "nu" }
 	config.window_decorations = "RESIZE"
 end
+
+config.adjust_window_size_when_changing_font_size = false
+config.window_padding = { left = 0, right = 0, top = 0, bottom = 0 }
+config.window_frame = {
+	border_left_color = "black",
+	border_right_color = "black",
+	border_bottom_color = "black",
+	border_top_color = "black",
+}
 
 return config
