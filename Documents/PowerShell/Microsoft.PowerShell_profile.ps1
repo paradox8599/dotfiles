@@ -20,6 +20,10 @@ Set-Alias curl "C:\Users\para\scoop\shims\curl.exe"
 Set-Alias dkc docker-compose
 
 
+function wsls {
+    wsl --shutdown
+}
+
 function vic {
     nvim --clean $args
 }
@@ -72,7 +76,10 @@ function psp { netstat -ano | Select-String $args }
 function ce { sudo ~/Documents/CtrlEscape.exe }
 function ec { sudo Stop-Process -Name "CtrlEscape" }
 
-function wrangler { bunx wrangler $args }
+function wrangler { npx --yes wrangler $args }
+
+function di { i --context_window 128000 --max_tokens 8192 --max_output 8192 --multi_line $args }
+function cfd { cloudflared $args }
 
 function gwm-stop { 
     sudo pwsh -Command "Stop-Process -Name glazewm"
