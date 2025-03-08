@@ -41,8 +41,8 @@ window/bar:
     padding: 2px 8px;
     # border-bottom: 1px solid rgb(255 255 255 / 5%);
     margin: 1px 2px;
-    # background: linear-gradient(rgb(0 0 0 / 95%), rgb(5 2 20 / 90%));
-    background: rgb(33 33 33 / 99%);
+    # background: linear-gradient(rgb(0 0 0 / 65%), rgb(5 2 20 / 0%));
+    background: rgb(33 33 33 / 70%);
     border-radius: 100px;
 
     i {
@@ -75,7 +75,7 @@ window/bar:
 
           &.focused,
           &:hover {
-            background: rgb(75 115 255 / 50%);
+            background: #9650ffc0;
           }
         }
       providers: ["glazewm"]
