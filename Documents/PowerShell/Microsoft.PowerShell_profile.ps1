@@ -55,9 +55,7 @@ function mflow {
     mitmproxy -n --set console_mouse=false --showhost -r $args
 }
 
-Set-Alias -Name j -Value __zoxide_z -Option AllScope -Scope Global -Force
-Set-Alias -Name ji -Value __zoxide_zi -Option AllScope -Scope Global -Force
-function jrm { zoxide remove $args }
+function zrm { zoxide remove $args }
 
 function http { python -m http.server $args }
 function venv { python -m venv $args }
