@@ -26,10 +26,12 @@ alias lg=lazygit
 alias lgd="lazygit -w $HOME -g $HOME/.paragit"
 alias gitd='git --git-dir=$HOME/.paragit --work-tree=$HOME'
 alias ii="open"
-alias i=""
 alias l="eza --long --icons --sort=type --group"
 alias ll="l --header"
 alias la="l --all"
+
+alias di="i --max_tokens 8192 --context_window 64000 --max_output 8192"
+alias cfd="bunx cloudflared"
 
 alias http="python -m http.server"
 
@@ -39,8 +41,6 @@ eval "$(vfox activate zsh)"
 
 # zoxide
 eval "$(zoxide init zsh)"
-alias j=z
-alias ji=zi
 
 # Yazi
 export EDITOR=nvim
