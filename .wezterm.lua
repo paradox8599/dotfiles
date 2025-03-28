@@ -24,6 +24,7 @@ config.macos_window_background_blur = 40
 config.window_background_opacity = 0.7
 
 config.font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Medium" })
+-- config.font = wezterm.font("Maple Mono Normal", { weight = "Medium" })
 config.color_scheme = "Arthur (Gogh)"
 config.line_height = 1
 
