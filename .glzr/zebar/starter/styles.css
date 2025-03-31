@@ -2,7 +2,7 @@
  * Import the Nerdfonts icon font.
  * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
  */
-@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 i {
   color: rgb(115 130 175 / 95%);
@@ -31,7 +31,8 @@ body,
 
 #root {
   border-bottom: 1px solid rgb(255 255 255 / 5%);
-  background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%));
+  /* background: linear-gradient(rgb(0 0 0 / 90%), rgb(5 2 20 / 85%)); */
+  background: #212121;
 }
 
 .app {
@@ -39,7 +40,7 @@ body,
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   height: 100%;
-  padding: 4px 1vw;
+  padding: 4px 0.5vw;
 }
 
 .left,
@@ -64,23 +65,27 @@ body,
 .network,
 .memory,
 .cpu,
-.battery {
-  margin-right: 20px;
+.battery,
+.keyboard,
+.weather {
+  margin: 0 1rem;
 }
 
 .workspaces {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .workspace {
   background: rgb(255 255 255 / 5%);
-  margin-right: 4px;
-  padding: 2px 8px;
+  padding: 2px 16px;
+  padding-top: 3px;
   color: rgb(255 255 255 / 90%);
   border: none;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 
   &.displayed {
     background: rgb(255 255 255 / 15%);
@@ -88,16 +93,16 @@ body,
 
   &.focused,
   &:hover {
-    background: rgb(75 115 255 / 50%);
+    background: #ee22ad80;
   }
 }
 
 .binding-mode,
 .tiling-direction,
 .paused-button {
-  background: rgb(255 255 255 / 15%);
+  background: rgb(255 255 255 / 8%);
   color: rgb(255 255 255 / 90%);
-  border-radius: 2px;
+  border-radius: 5px;
   line-height: 1;
   padding: 4px 8px;
   border: 0;
@@ -121,4 +126,16 @@ body,
   font-size: 7px;
   left: -8px;
   top: 3px;
+}
+
+.keyboard {
+  background: rgb(255 255 255 / 8%);
+  margin-right: 4px;
+  padding: 2px 8px;
+  padding-top: 3px;
+  color: rgb(255 255 255 / 90%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }

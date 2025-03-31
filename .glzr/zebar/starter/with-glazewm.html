@@ -27,10 +27,11 @@
         network: { type: "network" },
         glazewm: { type: "glazewm" },
         cpu: { type: "cpu" },
-        date: { type: "date", formatting: "EEE d MMM t" },
+        date: { type: "date", formatting: "EEE d MMM T" },
         battery: { type: "battery" },
         memory: { type: "memory" },
         weather: { type: "weather" },
+        keyboard: { type: "keyboard", refreshInterval: 250 },
       });
 
       createRoot(document.getElementById("root")).render(<App />);
@@ -61,6 +62,16 @@
               }
             default:
               return <i className="nf nf-md-wifi_strength_off_outline"></i>;
+          }
+        }
+
+        function getKeyboardLabel(keyboardOutput) {
+          const layout = keyboardOutput.layout.split("-")[0].toUpperCase();
+          switch (layout) {
+            case "ZH":
+              return "中";
+            default:
+              return layout;
           }
         }
 
@@ -132,6 +143,12 @@
             <div className="center">{output.date?.formatted}</div>
 
             <div className="right">
+              {output.keyboard && (
+                <div className="keyboard">
+                  {getKeyboardLabel(output.keyboard)}
+                </div>
+              )}
+
               {output.glazewm && (
                 <>
                   {output.glazewm.isPaused && (
