@@ -22,14 +22,14 @@ general:
 
 gaps:
   # Gap between adjacent windows.
-  inner_gap: "2px"
+  inner_gap: "1px"
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: "26px"
-    right: "2px"
-    bottom: "2px"
-    left: "2px"
+    top: "29px"
+    right: "1px"
+    bottom: "1px"
+    left: "1px"
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -68,7 +68,7 @@ window_behavior:
       maximized: true
 
       # Whether to show fullscreen windows as always on top.
-      shown_on_top: false
+      shown_on_top: true
 
 workspaces:
   - name: "1"
