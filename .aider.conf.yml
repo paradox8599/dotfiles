@@ -12,11 +12,14 @@ alias:
   - "r1pro:openai/deepseek-ai/DeepSeek-R1:pro"
   - "r1turbo:openai/deepseek-ai/DeepSeek-R1:turbo"
   - "r1:openai/deepseek-ai/DeepSeek-R1"
-  - "v3:openai/deepseek-ai/DeepSeek-V3"
+  - "v3:openai/deepseek-ai/DeepSeek-V3-0324"
+  - "v3ex:openai/deepseek-ai/DeepSeek-V3-0324:ex"
   - "qwq:openai/Qwen/QwQ-32B"
   - "qweni:openai/Qwen/Qwen2.5-72B-Instruct"
+  - "gpro:openai/google/gemini-2.5-pro-exp-0325"
 
-model: r1pro
+model: v3ex
+weak-model: v3ex
 
 ########################
 # API Keys and settings:
@@ -52,7 +55,7 @@ openai-api-base: https://liftai.icu/v1
 
 ## Set an API key for a provider (eg: --api-key provider=<key> sets PROVIDER_API_KEY=<key>)
 # api-key:
-  # - openai=
+# - openai=
 
 #################
 # Model settings:
@@ -88,7 +91,6 @@ model-metadata-file: .aider.model.metadata.json
 #auto-accept-architect: true
 
 ## Specify the model to use for commit messages and chat history summarization (default depends on --model)
-weak-model: openai/Qwen/Qwen2.5-72B-Instruct
 ## Specify the model to use for editor tasks (default depends on --model)
 #editor-model: xxx
 
@@ -210,8 +212,7 @@ dirty-commits: false
 attribute-author: true
 
 ## Attribute aider commits in the git committer name (default: True)
-attribute-committer: false
-
+attribute-committer: true
 ## Prefix commit messages with 'aider: ' if aider authored the changes (default: False)
 #attribute-commit-message-author: false
 
@@ -400,4 +401,3 @@ attribute-committer: false
 
 ## Specify which editor to use for the /editor command
 #editor: xxx
-
