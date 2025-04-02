@@ -3,15 +3,6 @@ on = "="
 run = "hardlink"
 desc = "Hardlink yanked files"
 
-
-[[manager.prepend_keymap]]
-on = "<C-q>"
-run = "quit"
-
-[[manager.prepend_keymap]]
-on = "q"
-run = "echo"
-
 [[manager.prepend_keymap]]
 on =[ "g", "i" ]
 run = "plugin lazygit"
