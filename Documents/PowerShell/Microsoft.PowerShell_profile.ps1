@@ -5,6 +5,7 @@ $env:YAZI_FILE_ONE='C:\Program Files\Git\usr\bin\file.exe'
 Import-Module gsudoModule
 Import-Module Get-ChildItemColor
 
+Set-Alias t wsl -Option AllScope
 Set-Alias ls Get-ChildItemColor -option AllScope
 Set-Alias vi nvim -Option AllScope
 Set-Alias vim nvim -Option AllScope
