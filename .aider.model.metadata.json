@@ -1,29 +1,11 @@
 {
-  "openai/deepseek-ai/DeepSeek-R1:turbo": {
-    "max_tokens": 8192,
-    "max_input_tokens": 32768,
-    "max_output_tokens": 8192,
-    "mode": "chat"
-  },
-  "openai/deepseek-ai/DeepSeek-R1:pro": {
-    "max_tokens": 8192,
-    "max_input_tokens": 65536,
-    "max_output_tokens": 8192,
-    "mode": "chat"
-  },
-  "openai/deepseek-ai/DeepSeek-R1": {
-    "max_tokens": 8192,
-    "max_input_tokens": 65536,
-    "max_output_tokens": 8192,
+  "openai/google/gemini-2.5-pro-exp-0325": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 65536,
     "mode": "chat"
   },
   "openai/deepseek-ai/DeepSeek-V3-0324": {
-    "max_tokens": 8192,
-    "max_input_tokens": 65536,
-    "max_output_tokens": 8192,
-    "mode": "chat"
-  },
-  "openai/deepseek-ai/DeepSeek-V3-0324:ex": {
     "max_tokens": 8192,
     "max_input_tokens": 65536,
     "max_output_tokens": 8192,
@@ -35,16 +17,22 @@
     "max_output_tokens": 8192,
     "mode": "chat"
   },
-  "openai/Qwen/Qwen2.5-72B-Instruct": {
+  "openai/deepseek-ai/DeepSeek-R1": {
+    "max_tokens": 8192,
+    "max_input_tokens": 65536,
+    "max_output_tokens": 8192,
+    "mode": "chat"
+  },
+  "openai/deepseek-ai/DeepSeek-R1:turbo": {
     "max_tokens": 8192,
     "max_input_tokens": 32768,
     "max_output_tokens": 8192,
     "mode": "chat"
   },
-  "openai/google/gemini-2.5-pro-exp-0325": {
-    "max_tokens": 1000000,
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 65536,
+  "openai/Qwen/Qwen2.5-72B-Instruct": {
+    "max_tokens": 8192,
+    "max_input_tokens": 32768,
+    "max_output_tokens": 8192,
     "mode": "chat"
   }
 }
