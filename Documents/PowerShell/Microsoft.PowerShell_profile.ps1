@@ -1,6 +1,7 @@
 Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 $env:PYTHONIOENCODING = 'utf-8'
 $env:YAZI_FILE_ONE='C:\Program Files\Git\usr\bin\file.exe'
+$env:Path = "C:/Users/para/scoop/apps/w64devkit/current/bin;" + $env:Path
 
 Import-Module gsudoModule
 Import-Module Get-ChildItemColor
@@ -19,7 +20,6 @@ Set-Alias yt yt-dlp
 Set-Alias tar "D:\para\Tools\w64devkit\bin\tar.exe"
 Set-Alias curl "C:\Users\para\scoop\shims\curl.exe"
 Set-Alias dkc docker-compose
-
 
 function wsls {
     wsl --shutdown
