@@ -1,9 +1,9 @@
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on = "="
 run = "hardlink"
 desc = "Hardlink yanked files"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on =[ "g", "i" ]
 run = "plugin lazygit"
 desc = "Open lazygit"

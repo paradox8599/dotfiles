@@ -34,6 +34,7 @@ alias di="i --max_tokens 8192 --context_window 64000 --max_output 8192"
 alias cfd="bunx cloudflared"
 
 alias http="python -m http.server"
+alias wr=wrangler
 
 # # init
 # eval $(thefuck --alias)
