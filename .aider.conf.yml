@@ -9,12 +9,10 @@
 # https://aider.chat/docs/config/dotenv.html
 
 alias:
-  - "v3:openai/deepseek-ai/DeepSeek-V3-0324"
-  - "r1:openai/deepseek-ai/DeepSeek-R1-0528"
-  - "r1o:openai/deepseek-ai/DeepSeek-R1"
-  - "r1turbo:openai/deepseek-ai/DeepSeek-R1:turbo"
-  - "qwq:openai/Qwen/QwQ-32B"
-  - "qweni:openai/Qwen/Qwen2.5-72B-Instruct"
+  - "r1:openai/DeepSeek-R1-0528"
+  - "v3:openai/DeepSeek-V3-0324"
+  - "r1o:openai/DeepSeek-R1"
+  - "or:openai/cypher-alpha"
 
 model: r1
 
@@ -115,7 +113,7 @@ model-metadata-file: .aider.model.metadata.json
 # Repomap settings:
 
 ## Suggested number of tokens to use for repo map, use 0 to disable
-# map-tokens: 0
+map-tokens: "8192"
 
 ## Control how often the repo map is refreshed. Options: auto, always, files, manual (default: auto)
 #map-refresh: auto

@@ -1,38 +1,26 @@
 {
-  "openai/deepseek-ai/DeepSeek-R1-0528": {
-    "max_tokens": 163840,
+  "openai/DeepSeek-R1-0528": {
+    "max_tokens": 64000,
     "max_input_tokens": 64000,
-    "max_output_tokens": 163840,
+    "max_output_tokens": 64000,
     "mode": "chat"
   },
-  "openai/deepseek-ai/DeepSeek-V3-0324": {
-    "max_tokens": 8192,
-    "max_input_tokens": 65536,
+  "openai/DeepSeek-V3-0324": {
+    "max_tokens": 64000,
+    "max_input_tokens": 64000,
     "max_output_tokens": 8192,
     "mode": "chat"
   },
-  "openai/Qwen/QwQ-32B": {
-    "max_tokens": 8192,
-    "max_input_tokens": 131072,
+  "openai/DeepSeek-R1": {
+    "max_tokens": 64000,
+    "max_input_tokens": 64000,
     "max_output_tokens": 8192,
     "mode": "chat"
   },
-  "openai/deepseek-ai/DeepSeek-R1": {
-    "max_tokens": 8192,
-    "max_input_tokens": 65536,
-    "max_output_tokens": 8192,
-    "mode": "chat"
-  },
-  "openai/deepseek-ai/DeepSeek-R1:turbo": {
-    "max_tokens": 8192,
-    "max_input_tokens": 32768,
-    "max_output_tokens": 8192,
-    "mode": "chat"
-  },
-  "openai/Qwen/Qwen2.5-72B-Instruct": {
-    "max_tokens": 8192,
-    "max_input_tokens": 32768,
-    "max_output_tokens": 8192,
+  "openai/cypher-alpha": {
+    "max_tokens": 1000000,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 1000000,
     "mode": "chat"
   }
 }
